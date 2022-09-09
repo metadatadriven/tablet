@@ -11,3 +11,13 @@ RUN sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E298A3A825C0D6
 RUN sudo add-apt-repository 'deb https://cloud.r-project.org/bin/linux/ubuntu focal-cran40/'
 RUN sudo apt install r-base -y
 RUN sudo apt install build-essential -y
+
+# Install R packages
+RUN R -e 'install.packages("csv")'
+RUN R -e 'install.packages("sortable")'
+RUN R -e 'install.packages("yamlet")'
+RUN R -e 'install.packages("haven")'
+RUN R -e 'install.packages("shiny")'
+RUN R -e 'install.packages("shinyAce")'
+RUN R -e 'install.packages("shinyFiles")'
+
