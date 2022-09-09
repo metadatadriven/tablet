@@ -1,5 +1,8 @@
 FROM gitpod/workspace-full
 
+# Install os packages needed by R apps
+RUN sudo apt-get install libudunits2-dev -y
+
 # Install R on Ubuntu
 # https://linuxize.com/post/how-to-install-r-on-ubuntu-20-04/
 RUN sudo apt-get update
