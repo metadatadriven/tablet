@@ -13,11 +13,11 @@ RUN sudo apt install r-base -y
 RUN sudo apt install build-essential -y
 
 # Install R packages
-RUN R -e 'install.packages("csv")'
-RUN R -e 'install.packages("sortable")'
-RUN R -e 'install.packages("yamlet")'
-RUN R -e 'install.packages("haven")'
-RUN R -e 'install.packages("shiny")'
-RUN R -e 'install.packages("shinyAce")'
-RUN R -e 'install.packages("shinyFiles")'
+RUN sudo R -e 'install.packages("csv")'
+RUN sudo R -e 'install.packages("sortable")'
+RUN sudo R -e 'install.packages("yamlet")'
+RUN sudo R -e 'install.packages("haven")'
+RUN sudo R -e 'install.packages("shiny")'
+RUN sudo R -e 'install.packages("shinyAce")'
+RUN sudo R -e 'install.packages("shinyFiles")'
 
